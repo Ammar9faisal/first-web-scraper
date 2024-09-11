@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YorkU Course Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://www.yorku.ca/brand/wp-content/uploads/sites/386/2023/08/UB_Logos_1.png">
+    <h1>YorkU Course Info</h1>
+
+    <form class="container">
+        <label for="department">Select Course Department</label>
+        <select id="department" required>
+            <option value="" disabled selected >Select Your Department</option>
+            <option value="AP" >AP</option>
+            <option value="ED" >ED</option>
+            <option value="FA" >FA</option>
+            <option value="GL" >GL</option>
+            <option value="HH" >HH</option>
+            <option value="LE" >LE</option>
+            <option value="SB" >SB</option>
+            <option value="SC" >SC</option>
+        </select>
+
+        <label for="course">Enter Course ID (e.g. ENG2001)</label>
+        <input id="course" placeholder="Course ID" pattern="^[A-Za-z]+[0-9]+$" required>
+
+        <label for="credits">Enter Course Credits </label>
+        <input id="credits" placeholder="Credits">
+
+        <button type="submit">Submit</button>
+        
+    </form>
+    <script src="scraper.js"></script>
+</body>
+</html>
